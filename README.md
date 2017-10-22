@@ -2,6 +2,11 @@
 
 Welcome to crim! If you've ever heard of __Befunge__, you'll have a head start with crim.
 
+## Installing
+
+- python 3.x
+- `colorama` (for debugger) (on pip)
+
 ## How work?
 
 It's best to think of a crim program as a 2d surface with characters arranged in a grid. Your program controls a little "pointer" that can move through the grid in one cell steps in any of the cardinal directions (up, right, down, left). Your pointer is always in a mode, and each mode processes commands differently. As your pointer moves, it will pass through commands and execute them.
