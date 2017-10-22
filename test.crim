@@ -1,3 +1,0 @@
-a1 s0 s1 s3 > c  f "Computed: " p s2 l1 s0 l2 s1 v This line does the actual Fibonacci computing
-                @ x 01- 3s p " :yllaT" i 3l c    < This line keeps tally
-            ^ 01+ <
