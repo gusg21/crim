@@ -20,11 +20,6 @@ def get(array, x, y):
         return array[y][x]
     except IndexError:
         return None
-        
-with open('test.crim', 'r') as myfile:
-    lines = myfile.read().split("\n")
-    max_len = len(max(lines, key=len))
-    ARRAY = [list(l.ljust(max_len, ' ')) for l in lines]
 
 done = False
 x = y = 0
@@ -46,6 +41,17 @@ memsetindex = ""
 number = ""
 ACCUMULATOR = 0
 PRINT_MODE_CHARS = ['"', "'"]
+try:
+    FILENAME = sys.argv[1]
+except:
+    print("No file!")
+    sys.exit(1)
+    
+with open(FILENAME, 'r') as myfile:
+    lines = myfile.read().split("\n")
+    max_len = len(max(lines, key=len))
+    ARRAY = [list(l.ljust(max_len, ' ')) for l in lines]
+
 while not done:
     char = get(ARRAY, x, y)
     
